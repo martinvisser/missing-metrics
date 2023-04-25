@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: missing-metrics-demo
+  cloud:
+    config:
+      enabled: false
+# If the following lines are enabled the list of metrics is reduced
+#  main:
+#    cloud-platform: cloud_foundry
+
+management:
+  endpoints.web.exposure:
+    include: "*"
